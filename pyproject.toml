@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "wheel"]  # Build requirements
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gbm_simulator" # name of the package must match the core folder name
+version = "0.1.0"
+description = "A Python package for simulating GBM."
+readme = "README.md"
+authors = [
+    { name = "Fayzan", email = "mahmoodfayzan2@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries"
+]
+
+# Runtime dependencies
+dependencies = [
+    "numpy",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[project.scripts]
+gbm_simulator = "gbm_simulator.cli:main"

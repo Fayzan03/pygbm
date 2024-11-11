@@ -1,0 +1,2 @@
+[console_scripts]
+gbm_simulator = gbm_simulator.cli:main
