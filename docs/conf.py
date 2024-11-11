@@ -13,10 +13,19 @@ author = 'Fayzan'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
+import sphinx_rtd_theme
+
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx_autodoc_typehints',
+    'sphinx_rtd_theme',
 ]
+
+# Set the theme
+html_theme = "sphinx_rtd_theme"
+
+# Add the theme path
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
