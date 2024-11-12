@@ -2,17 +2,17 @@ import numpy as np
 
 class GBMSimulator:
     """
-    Description of GBMSimulator
+    class GBMSimulator initialises the simulation.
 
     Attributes:
-        y0=y0 (type):
-        mu=mu (type):
-        sigma=sigma (type):
+        y0=y0 (float): Initial value (e.g. stock price).
+        mu=mu (float): Drift.
+        sigma=sigma (float): Volatility.
 
     Args:
-        y0 (undefined):
-        mu (undefined):
-        sigma (undefined):
+        y0 (float): Initial value (e.g. stock price).
+        mu (float): Drift.
+        sigma (float): Volatility.
 
     """
     def __init__(self, y0, mu, sigma):

@@ -12,4 +12,4 @@ This is documentation for the ``pygbm`` package.
    :maxdepth: 2
    :caption: Contents:
 
-   source/gbm_simulator
+   gbm_simulator
