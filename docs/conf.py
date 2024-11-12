@@ -18,8 +18,8 @@ author = 'Fayzan'
 
 extensions = [
     'sphinx.ext.autodoc',
+    'sphinx.ext.napoleon',
     'sphinx_autodoc_typehints',
-    'nbsphinx',
 	'sphinx.ext.mathjax',
 	'sphinx_rtd_theme',
     'sphinx.ext.githubpages',
@@ -31,7 +31,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 import os
 import sys
-sys.path.insert(0, os.path.abspath('gbm_simulator/base_simulator.py'))
+sys.path.insert(0, os.path.abspath('gbm_simulator'))
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -41,6 +41,3 @@ html_static_path = ['_static']
 master_doc = 'index'
 
 highlight_language = 'python3'
-
-# Add the theme path
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]

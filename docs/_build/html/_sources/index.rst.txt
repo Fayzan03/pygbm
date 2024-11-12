@@ -6,14 +6,10 @@
 Simulating Geometric Brownian Motion documentation
 ==================================================
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
-
+This is documentation for the ``pygbm`` package.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   gbm_module
-
+   source/gbm_simulator

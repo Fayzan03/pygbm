@@ -1,29 +1,33 @@
 import numpy as np
 
 class GBMSimulator:
+    """
+    Description of GBMSimulator
 
+    Attributes:
+        y0=y0 (type):
+        mu=mu (type):
+        sigma=sigma (type):
+
+    Args:
+        y0 (undefined):
+        mu (undefined):
+        sigma (undefined):
+
+    """
     def __init__(self, y0, mu, sigma):
-        """
-        Initialises the simulator
-
-        Args:
-            y0 is the initial starting point (stock price)
-            mu is drift
-            sigma is volatility
-        
-        """
+       
         self.y0=y0
         self.mu=mu
         self.sigma=sigma
 
     def simulate_path(self, T, N):
         """
-        Simulates a path of the Geometric Brownian Motion
+        Simulates a path of the Geometric Brownian Motion.
 
         Args:
-            T is the time horizon
-            N is the number of steps up to T
-        
+            T (float): The time horizon.
+            N (int): The number of steps up to T.
         """
         #T is time horizon
         #N is number of steps up to T
